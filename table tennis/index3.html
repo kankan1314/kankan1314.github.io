@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table tennis业务</title>
+</head>
+<body>
+<div align="center">
+<div id="myjihua"style="width:960px; height:400px; background-color: #fff;border: 2px solid darkgrey;"></div>
+</div>
+<script src="js/业务.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+	var $ = go.GraphObject.make;
+	var myDiagram =
+	  $(go.Diagram, "myjihua",
+		{
+		  initialContentAlignment: go.Spot.Center,
+		  "undoManager.isEnabled": true,
+		  layout: $(go.TreeLayout,
+					{ angle: 90, layerSpacing: 20 })
+		});
+
+	myDiagram.nodeTemplate = 
+	$(go.Node, "Vertical",
+	  { selectionObjectName: "BODY", deletable: true,
+		width:200
+	  },
+	
+	  $(go.Panel, "Auto",
+		{ name: "BODY" },
+		$(go.Shape, "Rectangle",
+		  { fill:"white", stroke: "#ddd" }
+		),
+		$(go.Panel, "Auto",
+		  { margin:0,
+			width:200,
+			height:80
+		  },
+
+		  $(go.TextBlock,
+			{ stretch: go.GraphObject.Horizontal,
+			font: "bold 12pt Verdana, sans-serif",
+			width:200,
+			height:30,
+			margin:10
+			},
+			new go.Binding("text", "name")
+		  ),
+		  $(go.TextBlock,
+			{ stretch: go.GraphObject.Horizontal,
+			font: "bold 12pt Verdana, sans-serif",
+			height:30
+			},
+			new go.Binding("text", "key")
+		  ),
+		  $(go.TextBlock,
+			{ stretch: go.GraphObject.Horizontal,
+			font: "bold 12pt Verdana, sans-serif",
+			height:30
+			},
+			new go.Binding("text", "parent")
+		  )
+		)  
+	  ), 
+	  $(go.Panel,  
+		{ height: 15 },  
+		$("TreeExpanderButton")
+	  )
+	);
+	  
+	myDiagram.linkTemplate =
+	  $(go.Link,
+		{ routing: go.Link.Orthogonal, corner: 5 },
+		$(go.Shape, { strokeWidth: 1, stroke: "#555" })); 
+		
+	var model = $(go.TreeModel);
+	model.nodeDataArray =
+	[
+	  { key: "1", name: "table tennis业务简介",   source: "cat1.png" },
+	  { key: "2", parent: "1", name: "线上聊天交流",    source: "cat2.png" },
+	  { key: "3", parent: "1", name: "线下店铺业务",   source: "cat3.png" },
+	  { key: "4", parent: "3", name: "附近球桌", source: "cat4.png" },
+	  { key: "5", parent: "3", name: "附近装备店",     source: "cat5.png" },
+	  { key: "6", parent: "2", name: "约球", source: "cat6.png" },
+	  { key: "7", parent: "2", name: "看球", source: "cat6.png" }
+	];
+	myDiagram.model = model;
+</script>
+
+</body>
+</html>

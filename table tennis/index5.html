@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>table tennis移动端</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="//apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+
+	<body>
+
+		<div data-role="page" id="pageone">
+			<div data-role="header">
+				<h1 style="font-size: 30px; color: forestgreen;">table tennis</h1>
+			</div>
+
+			<div data-role="panel" id="overlayPanel" data-display="overlay">
+				<h2 style="font-size: 30px;">App简介</h2>
+				<h2 style="font-size: 20px; color: forestgreen;">App理念:</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;这是一款以乒乓球APP，专注于解决人们对乒乓球的各类需求。</p>
+				<h2 style="font-size: 20px; color: forestgreen;">App宗旨:</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;让乒乓球成为全民运动。</p>
+				<h2 style="font-size: 20px; color: forestgreen;">App板块:</h2>
+				<div data-role="main" class="ui-content" style="width:100%; margin-top: -30px;">
+					<div data-role="collapsible">
+						<h1 align="center">乒乓球</h1>
+						<p>乒乓球比新闻、点评</p>
+					</div>
+				</div>
+				<div data-role="main" class="ui-content" style="width:100%; margin-top: -49px;">
+					<div data-role="collapsible">
+						<h1>附近</h1>
+						<p>附近的乒乓球新闻、比赛，球桌的查看</p>
+					</div>
+				</div>
+				<div data-role="main" class="ui-content" style="width:100%; margin-top: -49px;">
+					<div data-role="collapsible">
+						<h1>约球</h1>
+						<p>发起约球，实时定位，与附近人打球看球</p>
+					</div>
+				</div>
+				<div data-role="main" class="ui-content" style="width:100%; margin-top: -49px;">
+					<div data-role="collapsible">
+						<h1>直播</h1>
+						<p>国内外比赛直播</p>
+					</div>
+				</div>
+				<div data-role="main" class="ui-content" style="width:100%; margin-top: -49px;">
+					<div data-role="collapsible">
+						<h1>视频</h1>
+						<p>比赛集锦、教学视频、球员集锦</p>
+					</div>
+				</div>
+				<div data-role="main" class="ui-content" style="width:100%; margin-top: -49px;">
+					<div data-role="collapsible">
+						<h1>考试</h1>
+						<p>乒乓球知识考试，获胜者可成为区域主管</p>
+					</div>
+				</div>
+				<div data-role="main" class="ui-content" style="width:100%; margin-top: -49px;">
+					<div data-role="collapsible">
+						<h1>资源</h1>
+						<p>音乐，电影，游戏</p>
+					</div>
+				</div>
+				<div data-role="main" class="ui-content" style="width:100%; margin-top: -49px;">
+					<div data-role="collapsible">
+						<h1>装备</h1>
+						<p>专业的乒乓球装备、最合适的价格</p>
+					</div>
+				</div>
+				<div data-role="main" class="ui-content" style="width:100%; margin-top: -49px;">
+					<div data-role="collapsible">
+						<h1>线下</h1>
+						<p>装备店铺、咨询大佬</p>
+					</div>
+				</div>
+				<div data-role="main" class="ui-content" style="width:100%; margin-top: -49px;">
+					<div data-role="collapsible">
+						<h1>反馈</h1>
+						<p>提交对APP的意见反馈</p>
+					</div>
+				</div>
+				<a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">返回</a>
+			</div>
+			<div data-role="panel" id="myPanel" data-position="right">
+				<h2 style="font-size: 30px;">业务简介</h2>
+				<h2 style="font-size: 20px; color: forestgreen;">线上APP业务:</h2>
+				<button>看球</button>
+				<button>约球</button>
+				<h2 style="font-size: 20px; color: forestgreen;">线下店铺业务:</h2>
+				<button>咨询</button>
+				<button>装备</button>
+				<a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">关闭面板</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<a href="#overlayPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">APP简介</a>
+				<a href="#pagetwo" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">关于背景</a>
+				<a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">业务简介</a>
+				<div data-role="collapsible">
+						<h1>联系我们</h1>
+						<div data-role="collapsible">
+						<h1>Wechat</h1>
+						<img src="img/QQ呀.jpg" />
+						</div>
+						
+						<div data-role="collapsible">
+						<h1>QQ</h1>
+						<img src="img/微信呀.jpg" />
+						</div>
+					</div>
+			</div>
+		</div>
+		<div data-role="page" id="pagetwo">
+			<div data-role="header">
+				<h1 style="font-size: 30px; color: forestgreen;">table tennis</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<div align="center">
+					<h1 style="font-size: 25px; color: forestgreen;">项目背景</h1>
+				</div>
+				<p style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;中国体育运动迅速发展，乒乓球是我国最强势的项目，国名参与度极高，很多人想要了解和学习乒乓球却不知道从何开始，还有很多同学平时打球约不到人，而table tennis正是为此设计的一款集各项功能于一体的乒乓APP。</p>
+
+				<div align="center">
+					<h1 style="font-size: 25px; color: forestgreen;">市场背景</h1>
+				</div>
+				<p style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;随着互联用户群的日益庞大，互联产业正扮演者市场经济的重要角色。随着经济发展，很多人对生活的追求不只有饱暖二字，更注重精神追求，喜欢打乒乓球的也越来越多，但是市面上的约球软件鱼龙混杂，针对人们的需求，以大部分人的利益为基本出发点提供信息方便人们业余生活的乒乓球主题APP也孕育而生了。</p>
+
+				<div align="center">
+					<h1 style="font-size: 25px; color: forestgreen;">发展背景</h1>
+				</div>
+				<p style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp; 与一般app相比，table tennis有着简洁高效的特点。目前的app数量没有准确的统计数字，可以肯定的是由于开发app的技术门槛和成本要求都处于较低的水平，未来一段时间内在相应需求的推动下和国家鼓励大学生自主创新创业的政策引导下，投入使用的app数量将进入一个快速增长的阶段，而这个时候“纯粹”二字就显得尤为重要，table tennis只与乒乓球有关，纯粹单一。</p>
+				<a href="#pageone">跳转到第一个页面</a>
+			</div>
+
+		</div>
+	</body>
+
+</html>

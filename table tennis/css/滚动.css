@@ -1,0 +1,38 @@
+
+.scroll_main {
+	width: 960px;
+	display: block;
+	margin: 20px auto;
+	background-color:#fff;
+	border:1px solid #9a9a9a;
+}
+.scroll_wrap {
+	width: 100%;
+	height: 350px;
+	position: relative;
+}
+ .scroll_cont {
+	height: 100%;
+	overflow: hidden;
+}
+.scroll_cont p {
+	padding:15px;
+}
+.scroll_bar {
+	position: absolute;
+	top:0;
+	right:0;
+	width: 5px;
+	height: 100%;
+	background-color: #e4e4e4;
+}
+.scroll_slider {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	width: 5px;
+	height: 48px;
+	background-color: #525252;
+	border-radius:5px;
+	opacity: .5
+}
